@@ -16,7 +16,7 @@ module step1 # (
 
     wire [width-1:0] step1_data_temp [0:index-1]; 
     generate
-        for (genvar even = 0; even < index; even = even + 2) begin: step_1_even
+        for (genvar even = 0; even < index; even = even + 4) begin: step_1_even
             max_min #(
                 .width(width)
             )   max_min_x1 (
@@ -30,7 +30,7 @@ module step1 # (
     endgenerate
 
     generate
-        for (genvar odd = 2; odd < index; odd = odd + 2) begin: step_1_odd
+        for (genvar odd = 2; odd < index; odd = odd + 4) begin: step_1_odd
             max_min #(
                 .width(width)
             )   max_min_x2 (
@@ -42,6 +42,7 @@ module step1 # (
             );
         end
     endgenerate
+
 
     always @(posedge clk) begin
         if (rst) begin

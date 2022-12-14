@@ -13,8 +13,8 @@ module step3 # (
     output reg [width-1:0] step3_data [0:index-1] 
 );
 
-    parameter index_div4 = index[index_width-1:2];
-    parameter index_div2 = index[index_width-1:1];
+    parameter index_div4 = index/4;
+    parameter index_div2 = index/2;
 
 // temp 3
     wire [width-1:0] step3_data_temp3 [0:index-1]; 
@@ -31,6 +31,7 @@ module step3 # (
             );
         end
     endgenerate
+
 
 
 // temp 2
@@ -63,6 +64,8 @@ module step3 # (
         end
     endgenerate
     
+
+
 //  temp 1
     wire [width-1:0] step3_data_temp1 [0:index-1]; 
     generate

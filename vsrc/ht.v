@@ -47,6 +47,9 @@ module ht # (
         .step1_data (step1_data)
     );
 
+
+        
+
 // step 2
     wire [width-1:0] step2_data [0:index-1];
     step2 # (
@@ -60,7 +63,8 @@ module ht # (
         .old_data (step1_data),
         .step2_data (step2_data)
     );
- 
+    
+
 // step 3
     wire [width-1:0] step3_data [0:index-1];
     step3 #(
@@ -76,7 +80,13 @@ module ht # (
     );
 
     assign outdata = step3_data;
+    // initial begin
+    //     #100
+    //     for (int i= 0; i<index; i++) begin
+    //         $display("%h", outdata[i]);
+    //     end
+    // end
 
-    assign over  = 1'b0;
+    assign over  = |outdata[index-1];
 
 endmodule

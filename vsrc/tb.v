@@ -52,8 +52,9 @@ module tb (
 	initial begin
 		$readmemh("indata.txt", indata);
 		for (int i = 0; i<index; i++) begin
-				$display("%h", indata[i]);
+			$write("%h ", indata[i]);
 		end
+		$display("\n");
 		start <= 1;
 	end
 
@@ -74,15 +75,15 @@ module tb (
 	);
 
 // over
-	//TODO:DPI-C  C vs verilog
+	// //TODO:DPI-C  C vs verilog
 	initial begin
-		if (start & rst_n) begin
-			#4 
+		// #200 $finish;
+		#200 begin
 			for (int i = 0; i<index; i++) begin
 				$display("%h", outdata[i]);
 			end
 			$finish;
-		end
+		end 
 	end
 
 

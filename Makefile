@@ -15,6 +15,7 @@ WAVE_FILE := tb.vcd
 
 comp:
 	$(SIM_TOOL) -g2005-sv -s tb ${RTL_CODE}
+	
 
 run: comp
 	vvp -n a.out

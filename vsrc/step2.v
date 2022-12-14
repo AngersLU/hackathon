@@ -13,15 +13,15 @@ module step2 # (
     output reg [width-1:0] step2_data [0:index-1] 
 );
 
-    parameter index_div4 = index[index_width-1:2];
-    parameter index_div2 = index[index_width-1:1];
+    parameter index_div4 = index/4;
+    parameter index_div2 = index/2;
 
     wire [width-1:0] step2_data_temp2 [0:index-1]; 
     generate
         for (genvar lo = 0; lo < index_div4; lo++) begin: step2_temp2_lo
             max_min  #(
                 .width(width)
-            )   max_min_x (
+            )   max_min_x3 (
                 .a (old_data[lo]),
                 .b (old_data[lo+2]),
 
@@ -32,18 +32,20 @@ module step2 # (
     endgenerate
 
     generate
-        for (genvar hi = index-1; hi > index-index_div4-1; hi--) begin: step2_temp2_hi
+        for (genvar hi = index_div2; hi < index_div2+index_div4; hi++) begin: step2_temp2_hi
             max_min #(
                 .width(width)
-            )   max_min_x (
+            )   max_min_x4 (
                 .a (old_data[hi]),
-                .b (old_data[hi-2]),
+                .b (old_data[hi+2]),
 
-                .max (step2_data_temp2[hi-2]),
-                .min (step2_data_temp2[hi])
+                .max (step2_data_temp2[hi]),
+                .min (step2_data_temp2[hi+2])
             );
         end
     endgenerate
+
+
 
 
     wire [width-1:0] step2_data_temp1 [0:index-1]; 
@@ -74,6 +76,7 @@ module step2 # (
             );
         end
     endgenerate
+
 
 
     always @(posedge clk) begin
