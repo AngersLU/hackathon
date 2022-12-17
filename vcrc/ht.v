@@ -52,6 +52,7 @@ module ht # (
         end
 		$display("");
     end
+    assign outdata = step1_data;
 `endif
 
 // step 2
@@ -75,6 +76,7 @@ module ht # (
         end
 		$display("");
     end
+    assign outdata = step2_data;
 `endif
 
 // step 3
@@ -99,6 +101,7 @@ module ht # (
         end
 		$display("");
     end
+    assign outdata = step3_data;
 `endif
 
 // step 4
@@ -123,6 +126,7 @@ module ht # (
         end
 		$display("");
     end
+    assign outdata = step4_data;
 `endif
 
 // step 5
@@ -147,10 +151,9 @@ module ht # (
         end
 		$display("");
     end
+    assign outdata = step5_data;
 `endif
 
-    assign outdata = step5_data;
-    // assign over  = |outdata[index-1];
     assign over = 0;
 
 
