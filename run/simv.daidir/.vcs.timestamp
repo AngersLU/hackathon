@@ -1,0 +1,155 @@
+2        
+0 df.vh
+0 /eda/tools/snps/VCS/R-2020.12/etc/systemverilog/df.vh
+47
++delay_mode_distributed
++error+500
++incdir+../vsrc
++itf+/eda/tools/snps/VCS/R-2020.12/linux64/lib/vcsdp_lite.tab
++lint=TFIPC-L
++nospecify
++notimingcheck
++v2k
++vcs+flush+all
++vcsd1
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -fPIC -O -I/eda/tools/snps/VCS/R-2020.12/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mexternalobj=
+-Mldflags= -rdynamic
+-Mobjects= /eda/tools/snps/VCS/R-2020.12/linux64/lib/libvirsim.so /eda/tools/snps/VCS/R-2020.12/linux64/lib/liberrorinf.so /eda/tools/snps/VCS/R-2020.12/linux64/lib/libsnpsmalloc.so /eda/tools/snps/VCS/R-2020.12/linux64/lib/libvfs.so /eda/tools/snps/verdi/R-2020.12/share/PLI/VCS/LINUX64/pli.a
+-Mout=simv
+-Msaverestoreobj=/eda/tools/snps/VCS/R-2020.12/linux64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Mxcflags= -pipe -fPIC -I/eda/tools/snps/VCS/R-2020.12/include
+-Mxllcflags=
+-P
+-Xufe=2steps
+-debug_acc+all
+-f ../filelist/hackathon.f
+-f ../filelist/tb.f
+-full64
+-gen_obj
+-kdb
+-l
+-picarchive
+-sverilog
+-timescale=1ns/10ps
+-top
+/eda/tools/snps/VCS/R-2020.12/linux64/bin/vcs1
+compile.log
+/eda/tools/snps/verdi/R-2020.12/share/PLI/VCS/LINUX64/novas.tab
+tb
+../filelist/tb.f
+../filelist/hackathon.f
+69
+XDG_SESSION_ID=6163
+XDG_RUNTIME_DIR=/run/user/1039
+VSCODE_IPC_HOOK_CLI=/run/user/1039/vscode-ipc-eb615203-0779-42dc-bb4a-e7c369eafa3b.sock
+VSCODE_GIT_IPC_HANDLE=/run/user/1039/vscode-git-a8f666375f.sock
+VSCODE_GIT_ASKPASS_NODE=/home/lufeifan/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/node
+VSCODE_GIT_ASKPASS_MAIN=/home/lufeifan/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass-main.js
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+VMR_MODE_FLAG=64
+VENDOR=unknown
+VCS_MX_HOME_INTERNAL=1
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=compile.log
+VCS_HOME=/eda/tools/snps/VCS/R-2020.12
+VCS_DEPTH=0
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=linux64
+USER_NAME=09_08_22
+UNAME=/bin/uname
+TOOL_HOME=/eda/tools/snps/VCS/R-2020.12/linux64
+TMUX_PANE=%0
+TMUX=/tmp/tmux-1039/default,354770,0
+TERM_PROGRAM_VERSION=3.2a
+TERM_PROGRAM=tmux
+SYNOPSYS_LC_ROOT=/eda/tools/snps/lc/M-2017.06
+SSH_CONNECTION=192.168.23.107 59644 192.168.224.155 22
+SSH_CLIENT=192.168.23.107 59644 22
+SSH_AUTH_SOCK=/run/user/1039/vscode-ssh-auth-sock-231197079
+SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+QT_GRAPHICSSYSTEM_CHECKED=1
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+PERL_MM_OPT=INSTALL_BASE=/home/lufeifan/perl5
+PERL_MB_OPT=--install_base /home/lufeifan/perl5
+PERL_LOCAL_LIB_ROOT=/home/lufeifan/perl5
+PERL_HOMEDIR=1
+PERL5LIB=/home/lufeifan/perl5/lib/perl5
+OVA_UUM=0
+OSTYPE=linux
+MFLAGS=
+MAKELEVEL=1
+MAKEFLAGS=
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_TIME=zh_CN.UTF-8
+LC_TELEPHONE=zh_CN.UTF-8
+LC_PAPER=zh_CN.UTF-8
+LC_NUMERIC=zh_CN.UTF-8
+LC_NAME=zh_CN.UTF-8
+LC_MONETARY=zh_CN.UTF-8
+LC_MEASUREMENT=zh_CN.UTF-8
+LC_IDENTIFICATION=zh_CN.UTF-8
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+LC_ADDRESS=zh_CN.UTF-8
+KDEDIRS=/usr
+HOSTTYPE=x86_64-linux
+GROUP=lufeifan
+GIT_ASKPASS=/home/lufeifan/.vscode-server/bin/dfd34e8260c270da74b5c2d86d61aee4b6d56977/extensions/git/dist/askpass.sh
+CXX=/opt/rh/devtoolset-7/root/usr/bin/g++
+CPP=/opt/rh/devtoolset-7/root/usr/bin/cpp
+COLORTERM=truecolor
+CC=/opt/rh/devtoolset-7/root/usr/bin/gcc
+ARMLMD_LICENSE_FILE=12345@127.0.0.1:12345@127.0.0.1:12345@127.0.0.1
+APACHEROOT=/eda/tools/apache/redhawkv2020r2.1
+AM_HOME=/home/zhuangchunan/proj/soc_proj/riscv_tools/abstract-machine
+AD_HOME=/eda/tools/arm/amba/AMBADesigner_r3p4_nic400_r0p1/AMBADesigner/
+0
+24
+1671252808 ../vsrc/df.vh
+1671252582 /home/lufeifan/vcs/vsrc/max_min_32_up.v
+1671252593 /home/lufeifan/vcs/vsrc/max_min_32_down.v
+1671252440 /home/lufeifan/vcs/vsrc/max_min_16_up.v
+1671252443 /home/lufeifan/vcs/vsrc/max_min_16_down.v
+1671252153 /home/lufeifan/vcs/vsrc/max_min_8_up.v
+1671252078 /home/lufeifan/vcs/vsrc/max_min_8_down.v
+1671093759 /home/lufeifan/vcs/vsrc/max_min_2_up.v
+1671093781 /home/lufeifan/vcs/vsrc/max_min_2_down.v
+1671252630 /home/lufeifan/vcs/vsrc/step5.v
+1671252359 /home/lufeifan/vcs/vsrc/step4.v
+1671252260 /home/lufeifan/vcs/vsrc/step3.v
+1671251868 /home/lufeifan/vcs/vsrc/step2.v
+1671198620 /home/lufeifan/vcs/vsrc/step1.v
+1671088918 /home/lufeifan/vcs/vsrc/max_min.v
+1671251891 /home/lufeifan/vcs/vsrc/max_min_4_up.v
+1671251785 /home/lufeifan/vcs/vsrc/max_min_4_down.v
+1671252808 /home/lufeifan/vcs/vsrc/df.vh
+1671200672 /home/lufeifan/vcs/vsrc/ht.v
+1671201522 /home/lufeifan/vcs/tb/tb.v
+1671252875 ../filelist/hackathon.f
+1671200714 ../filelist/tb.f
+1639416444 /eda/tools/snps/verdi/R-2020.12/share/PLI/VCS/LINUX64/novas.tab
+1639445142 /eda/tools/snps/VCS/R-2020.12/linux64/lib/vcsdp_lite.tab
+5
+1639445151 /eda/tools/snps/VCS/R-2020.12/linux64/lib/libvirsim.so
+1639445142 /eda/tools/snps/VCS/R-2020.12/linux64/lib/liberrorinf.so
+1639445153 /eda/tools/snps/VCS/R-2020.12/linux64/lib/libsnpsmalloc.so
+1639445166 /eda/tools/snps/VCS/R-2020.12/linux64/lib/libvfs.so
+1639416446 /eda/tools/snps/verdi/R-2020.12/share/PLI/VCS/LINUX64/pli.a
+1671252882 simv.daidir
+-1 partitionlib
