@@ -73,21 +73,22 @@ module tb (
 	);
 
 // over
-function void Print(bit [width-1:0] p [0:`INDEX-1]);
-	foreach(p[i]) begin
-		$write("%d ",  p[i]);
-	end
-	$display("");
-endfunction
+	function void Print(bit [width-1:0] p [0:`INDEX-1]);
+		foreach(p[i]) begin
+			$write("%d ",  p[i]);
+		end
+		$display("");
+	endfunction
 
-function void Compare(input bit [width-1:0] a [0:`INDEX-1],input bit [width-1:0] b [0:`INDEX-1]);
-	bit [`INDEX-1:0] com;
-	foreach (a[i])begin
-		com[i] = a[i]!=b[i];
-	end
-	if (|com) $display("Error!");
-	else $display("\nPass!\n");
-endfunction
+	function void Compare(	input bit [width-1:0] a [0:`INDEX-1],
+							input bit [width-1:0] b [0:`INDEX-1]);
+		bit [`INDEX-1:0] com;
+		foreach (a[i])begin
+			com[i] = a[i]!=b[i];
+		end
+		if (|com) $display("Error!");
+		else $display("\nPass!\n");
+	endfunction
 
 	initial begin
 		#200 begin
